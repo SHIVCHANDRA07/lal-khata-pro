@@ -33,10 +33,10 @@ jobs:
 
       - name: Build Android APK
         run: |
-          flet build apk src -v
+          printf 'y\n' | flet build apk src
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: Lal-Khata-Pro-APK
-          path: src/build/apk/*.apk
+          path: "**/build/apk/*.apk"
