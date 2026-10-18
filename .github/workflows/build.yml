@@ -32,8 +32,8 @@ jobs:
         run: |
           yes | flet build apk src
 
-      - name: Upload APK
+     - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: Lal-Khata-Pro-APK
-          path: build/apk/*.apk
+          path: "**/build/apk/*.apk"
