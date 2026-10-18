@@ -3,6 +3,7 @@ import sqlite3
 import urllib.parse
 import webbrowser
 import flet as ft
+from flet import app
 from datetime import datetime
 
 # ----------------- Database Setup -----------------
@@ -1296,4 +1297,4 @@ def main(page: ft.Page):
 
 
 if __name__ == "__main__":
-    ft.app(target=main)
+    app(target=main)
