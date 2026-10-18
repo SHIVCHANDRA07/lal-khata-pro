@@ -39,7 +39,7 @@ jobs:
 
       - name: Build Android APK
         run: |
-          flet build apk src --verbose
+          printf 'y\n' | flet build apk src --verbose
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
