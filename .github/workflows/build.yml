@@ -30,7 +30,7 @@ jobs:
 
       - name: Build Android APK
         run: |
-          yes | flet build apk
+          yes | flet build apk src
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
