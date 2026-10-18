@@ -2,7 +2,8 @@ import os
 import sqlite3
 import urllib.parse
 import webbrowser
-import flet as ft
+if __name__ == "__main__":
+    ft.app(main)
 
 from datetime import datetime
 
