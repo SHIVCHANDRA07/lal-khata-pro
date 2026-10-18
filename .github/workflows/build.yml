@@ -39,6 +39,8 @@ jobs:
 
       - name: Build Android APK
         run: |
+          printf 'y\n' | flet build apk src --target-platform android-arm64 --split-per-abi=false -vv
+        run: |
           printf 'y\n' | flet build apk src --verbose
 
       - name: Upload APK
