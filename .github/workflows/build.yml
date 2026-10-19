@@ -39,8 +39,7 @@ jobs:
 
       - name: Build Android APK
         run: |
-          export GRADLE_OPTS="-Xmx4096m -Dorg.gradle.daemon=false"
-          printf 'y\n' | flet build apk src --split-per-abi=false -vv
+          flet build apk src --yes -vv
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
